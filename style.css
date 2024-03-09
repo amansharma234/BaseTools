@@ -1,0 +1,160 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+header {
+    background-image:  url(images/banner.jpg);
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+}
+.search{
+    height: 30px;
+    width: 300px;
+    margin-left: 40px;
+}
+
+.titled{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    
+}
+.logo{
+    height: 65px;
+    float: left;
+}
+.title{
+    text-align: center;
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+    padding-top: 80px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+     
+}
+
+.box img{
+    width: 155px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.box{  
+    margin: 12px;
+    padding: 40px;
+    display: block;
+    float: left;    
+    width: 25%;
+    height: 200px;
+    text-align: center;
+    border: 0px solid gray;
+    border-radius: 20px;
+    background: lightgray;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.box:hover{
+    box-shadow: 0 20px 20px rgba(58, 90, 116, 0.7);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    margin-top: 50px;
+    background-image:url(images/banner.jpg);
+    height: 250px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+}
+input {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    margin: 20px;
+    font-size: 1em;
+    color: black;
+    font-family: cursive, sans-serif;
+  }
+
+.box2{  
+    margin: 35px;
+    padding: 10px;
+    margin-top: 50px;
+    display: block;
+    float: left;    
+    width: 20%;
+    height: 130px;    
+    border: 0px solid gray;
+    border-radius: 20px;
+    background: gray;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.box2 h3{
+    color: white;
+}
+
+h2{
+    text-align: center;
+    color: black;
+    font-size: xxx-large;
+    text-decoration: underline;    
+
+}
+h3{
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+#btn{
+    background:linear-gradient(to bottom right, rgb(123, 170, 224) , blue);
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    font-size: x-large;
+    
+}
+
+#btn:hover{
+    color: white;
+    background-color: white;
+}
+p{
+    font-size: x-large;
+    line-height: 50px;
+}
+
+ul{
+    margin-top: 5px;
+    font-size: large;
+}
+
+.box3{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

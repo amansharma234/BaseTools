@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Split-bill-Calculator</title>
+</head>
+
+<body>
+    <header>
+        <div class="titled"> <a href= index.html><h1 class="title"><img src="images\logo.png" alt="LOGO" class="logo"> BASETOOLS.COM</h1></a></div>
+        
+        <div class="searchBox">
+            <table class="container">
+                <tr>
+                    <td><input type="text" placeholder="SEARCH" class="search"></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <div>
+        <h2>SPLIT-BILL-CALCULATOR</h2>
+        <div class="box3">
+            <input type="text" id="h" placeholder="Total Bill (in ₹)">
+      
+            <input type="text" id="w" placeholder="Number of Person">
+            <p>Each Person Has To Pay: <span id="result"></span> </p>
+            <button id="btn" onclick="SPLIT()">CALCULATE</button>
+        </div>
+       
+       
+
+    </div>
+
+    <footer>
+        <div class="main">
+            <div class="box2">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li> ADDRESS: B N College Of Engineering & Technology </li>
+                    <li> Email: <a href="mailto:amansharma3962@gmail.com">Basetools-creator@gmail.com</a> </li>
+                    <li> Phone :<a href="tel:+919519452294">9519452294</a> </li>
+                </ul>
+            </div>
+
+            <div class="box2">
+                <h3>Upcoming Tools</h3>
+
+                <ul>
+                    <li> Shape Changing Tools</li>
+                    <li> Currency Converter </li>
+                    <li> Editing Tools</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <h3>About Us</h3>
+                <ul>
+                    <li>This is a demo website made by a Student Of Second Year B.Tech from B N College Of Engineering & Technology</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+    <script>
+
+        function SPLIT() {
+            var h = Number(document.getElementById('h').value);
+            var w = Number(document.getElementById('w').value);
+            var mh = h / w;
+            document.getElementById("result").innerHTML = '₹' + mh;
+        }
+    </script>
+
+
+</body>
+
+</html>

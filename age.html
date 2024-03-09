@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="titled"> <a href=index.html>
+                <h1 class="title"><img src="images\logo.png" alt="LOGO" class="logo"> BASETOOLS.COM</h1>
+            </a></div>
+        <div class="searchBox">
+            <table class="container">
+                <tr>
+                    <td><input type="text" placeholder="SEARCH" class="search"></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <h2>AGE CALCULATOR</h2>
+    <div class="box3">
+        <input type="datetime-local" id="DOB">
+
+        <button id="btn">Calculate</button>
+        <p id="year"></p>
+        <p id="month"></p>
+        <p id="week"></p>
+        <p id="day"></p>
+        <p id="hour"></p>
+        <p id="min"></p>
+        <p id="sec"></p>
+
+    </div>
+
+
+
+    <footer>
+        <div class="main">
+            <div class="box2">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li> ADDRESS: B N College Of Engineering & Technology </li>
+                    <li> Email: <a href="mailto:amansharma3962@gmail.com">Basetools-creator@gmail.com</a> </li>
+                    <li> Phone :<a href="tel:+919519452294">9519452294</a> </li>
+                </ul>
+            </div>
+
+            <div class="box2">
+                <h3>Upcoming Tools</h3>
+
+                <ul>
+                    <li> Shape Changing Tools</li>
+                    <li> Currency Converter </li>
+                    <li> Editing Tools</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <h3>About Us</h3>
+                <ul>
+                    <li>This is a demo website made by a Student Of Second Year B.Tech from B N College Of Engineering &
+                        Technology</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+    <script>
+        document.querySelector('#btn').addEventListener("click", function () {
+            const update = function () {
+                let DOB = document.getElementById('DOB').value;
+                bday = new Date(DOB);
+                bday_val = bday.getTime();
+                today = new Date();
+                now = today.getTime();
+                value = now - bday_val;
+                var_sec = Math.floor(value / 1000);
+                var_min = Math.floor(value / (1000 * 60));
+                var_hour = Math.floor(value / (1000 * 60 * 60));
+                var_day = Math.floor(value / (1000 * 60 * 60 * 24));
+                var_week = Math.floor(value / (1000 * 60 * 60 * 24 * 7));
+                var_month = Math.floor(value / (1000 * 60 * 60 * 24 * 30.4375));
+                var_year = Math.floor(value / (1000 * 60 * 60 * 24 * 365.25));
+
+                let insert = function (x, y) {
+                    document.querySelector(x).innerHTML = y;
+                }
+                insert("#year", var_year + "Years");
+                insert("#month", var_month + "Months");
+                insert("#week", var_week + "Weeks");
+                insert("#day", var_day + "Days");
+                insert("#hour", var_hour + "Hours");
+                insert("#min", var_min + "Minutes");
+                insert("#sec", var_sec + "Seconds");
+
+
+            };
+            setInterval(update, 1000)
+        })
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
